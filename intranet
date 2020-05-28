@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MakroSolution GmbH</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #008b8b;
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: orange;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: orange;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #008B8B;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Makes the links colored */
+a {  
+  color: orangered;
+}
+/* Creates the links colored */
+button {
+  color: #777;
+  transition-duration: 0.4s;
+  width: 350px;
+  height: 35px;
+}
+
+button:hover {
+  background-color: orangered;
+  color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to MakroSolution server!</h1>
+<img src="makro-solution-logo-color.svg" alt="MakroSolution Logo">
+<h3>Intranet</h3>
+</header>
+
+<section>
+  <nav>
+    <ul>
+    <p><strong>Links and Tools:</strong></p>
+      <li><a href="http://intern/gitweb/">gitweb</a></li>
+      <li><a href="http://172.21.3.4:3000/home">rocketchat</a></li>
+    </ul>
+  </nav>
+<article>
+<p>For online nginx documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+<p><em>Thank you for using nginx.</em></p>
+</article>
+</section>
+
+<footer>
+    <button>Login</button>
+</footer>
+
+</body>
+</html>
